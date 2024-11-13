@@ -18,7 +18,7 @@ const Navbar = () => {
               aria-label="logo"
               className="flex space-x-2 items-center"
             >
-              <span className="text-2xl font-bold text-yellow-900 ">
+              <span className="text-3xl font-bold text-yellow-900 ">
                 Tailus <span className="text-yellow-700 ">Feedus</span>
               </span>
             </Link>
@@ -50,19 +50,19 @@ const Navbar = () => {
           ></label>
           <div className="hidden peer-checked:flex w-full flex-col lg:flex lg:flex-row justify-end z-30 items-center gap-y-6 p-6 rounded-xl bg-white  lg:gap-y-0 lg:p-0 md:flex-nowrap lg:bg-transparent lg:w-7/12">
             <div className="text-gray-600 lg:pr-4 w-full">
-              <ul className="tracking-wide font-medium text-sm flex flex-col gap-y-6 lg:gap-y-0 lg:flex-row w-full">
-                <li>
+              <ul className="tracking-wide font-medium text-sm flex flex-col gap-y-6 md:gap-4 lg:gap-y-0 lg:flex-row w-full">
+                <li className="border-dashed border-4">
                   <Link
                     href="/all-recipes"
-                    className="block md:px-4 transition hover:text-yellow-700"
+                    className="block text-xl md:px-4 transition hover:text-yellow-700"
                   >
                     <span>All recipes</span>
                   </Link>
                 </li>
-                <li>
+                <li className="border-dashed border-4">
                   <Link
                     href="/cart"
-                    className="block md:px-4 transition hover:text-yellow-700"
+                    className="block text-xl md:px-4 transition hover:text-yellow-700"
                   >
                     <span>Cart</span>
                   </Link>

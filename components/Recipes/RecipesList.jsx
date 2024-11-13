@@ -16,7 +16,7 @@ const RecipesList = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["recipes"],
     queryFn: HttpKit.getTopRecipes,
-  });
+  }); //gotta check this
 
   useEffect(() => {
     if (data) {
