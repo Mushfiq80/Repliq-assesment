@@ -31,7 +31,7 @@ export default function LoginForm() {
         onChange={(e) => setPassword(e.target.value)}
         className="p-2 border rounded"
       />
-      <button onClick={handleLogin} className="p-2 bg-yellow-600 text-rose-700 rounded">
+      <button onClick={handleLogin} className="p-2 bg-yellow-500 text-slate-700 rounded w-1/3 mx-auto">
         Login
       </button>
     </div>

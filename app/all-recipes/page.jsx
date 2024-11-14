@@ -3,8 +3,8 @@ import React from "react";
 
 const AllRecipes = () => {
   return (
-    <div className="bg-gray-50 min-h-screen flex items-center">
-      <div className="container mx-auto">
+    <div className="bg-gray-50 flex items-center">
+      <div className="container mt-10 mx-auto">
         <RecipeLoader />
       </div>
     </div>

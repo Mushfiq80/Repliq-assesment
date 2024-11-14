@@ -19,18 +19,25 @@ const RecipeLoader = () => {
     </div>;
     if (error) return <div>Error loading recipes: {error.message}</div>;
 
+    // const handleDetailsOpen = (id) => {
+    //     // Implement what should happen when details open, e.g., navigate to a details page
+    //     console.log("Recipe ID:", id);
+    // };
+    
     return (
-        <div className="container mx-auto py-10">
-            <h1 className="text-3xl font-bold">All Recipes</h1>
+        <div className="container mx-auto py-10 text-center space-y-5">
+            <h1 className="text-5xl text-orange-700 font-bold">All Recipes</h1>
+            <p className="text-xl text-slate-600">Your journey to great meals begins here.
+            Select, cook, and enjoy endless possibilities.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {data.map((recipe) => (
-                    <RecipeCard 
-                    key={recipe.id} 
-                    recipe={recipe}
-                    handleDetailsOpen={handleDetailsOpen} 
-                    showAddToCart={true}/>
+                    <RecipeCard
+                        key={recipe.id}
+                        recipe={recipe}
+                        // handleDetailsOpen={handleDetailsOpen}
+                        showAddToCart={true} />
                 ))}
-                
+
             </div>
         </div>
     );

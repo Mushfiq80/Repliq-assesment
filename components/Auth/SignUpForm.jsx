@@ -44,7 +44,7 @@ export default function SignUpForm() {
         onChange={(e) => setPassword(e.target.value)}
         className="p-2 border rounded"
       />
-      <button onClick={handleSignUp} className="p-2 bg-yellow-600 text-red-600 font-semibold text-xl rounded">
+      <button onClick={handleSignUp} className="p-2 bg-yellow-500 text-slate-600 font-semibold text-xl rounded w-1/3 mx-auto">
         Sign Up
       </button>
     </div>

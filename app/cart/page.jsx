@@ -23,11 +23,11 @@ const Cart = () => {
 
 
   return (
-    <div className="bg-gray-50 min-h-screen flex items-center">
-      <div className="container mx-auto">
+    <div className="bg-gray-50 min-h-screen text-center flex items-center">
+      <div className="container mt-16 mx-auto">
         {/* Cart page */}
-        <h1 className="text-4xl">This is the cart page</h1>
-        {cartRecipes.length === 0 && <p>Your cart is empty</p>}
+        <h1 className="text-5xl font-semibold text-orange-700 mb-6">Cart</h1>
+        {cartRecipes.length === 0 && <p className='text-xl text-slate-600'>Your cart is empty</p>}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cartRecipes.map(recipe => (
             <RecipeCard 
