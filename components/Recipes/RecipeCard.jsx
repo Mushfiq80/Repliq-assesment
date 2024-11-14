@@ -13,12 +13,12 @@ const RecipeCard = ({ recipe, handleDetailsOpen, showAddToCart }) => {
     }
   };
   return (
-    <div className="relative group space-y-6 border border-gray-100  rounded-3xl bg-white  px-4 py-4 text-center shadow hover:cursor-pointer hover:shadow-xl transition duration-200 shadow-gray-600/10"
+    <div onClick={() => handleDetailsOpen(recipe?.idMeal)} className="relative group space-y-6 border border-gray-100  rounded-3xl bg-white  px-4 py-4 text-center shadow hover:cursor-pointer hover:shadow-xl transition duration-200 shadow-gray-600/10"
     >
       <Image
         className="mx-auto rounded-2xl"
         src={recipe?.strMealThumb}
-        alt="Web Development"
+        alt={recipe?.recipeId}
         loading="lazy"
         width={500}
         height={500}
@@ -44,7 +44,7 @@ const RecipeCard = ({ recipe, handleDetailsOpen, showAddToCart }) => {
         animi officiis.
       </p>
       <div className="relative mx-auto flex items-center justify-center invisible  group-hover:visible">
-        <button onClick={() => handleDetailsOpen(recipe?.idMeal)} className="text-primary">View Details</button>
+        <button className="text-primary">View Details</button>
       </div>
     </div>
   );
