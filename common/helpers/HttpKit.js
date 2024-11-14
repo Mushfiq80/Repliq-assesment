@@ -6,6 +6,7 @@ const HttpKit = {
   getAllRecipes: async () => {
     try {
       const response = await axios.get(`${BASE_URL}/search.php?s=`);
+      
       return response.data.meals || [];
     } catch (error) {
       console.error("Error fetching all recipes:", error);
@@ -15,6 +16,7 @@ const HttpKit = {
   getTopRecipes: async () => {
     try {
       const response = await axios.get(`${BASE_URL}/filter.php?a=American`);
+      console.log(response.data.meals);
       return response.data.meals ? response.data.meals.slice(0, 12) : [];
     } catch (error) {
       console.error("Error fetching top recipes:", error);
