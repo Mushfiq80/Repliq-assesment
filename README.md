@@ -51,5 +51,5 @@ Purpose: Enables new users to create an account on the platform, unlocking addit
 Functionality: Users can register with their details, setting up an account that allows for a tailored experience and data persistence.
 
 # Time Estimate
-- Around 16 hours needed to done this project. 
+- Around 16 hours were spent to get this project done.
 
