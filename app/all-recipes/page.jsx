@@ -1,4 +1,5 @@
-import RecipeLoader from "@/components/RecipeLoader/recipeLoader";
+
+import RecipeLoader from "@/components/RecipeLoader/RecipeLoader";
 import React from "react";
 
 const AllRecipes = () => {
